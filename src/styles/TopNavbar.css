@@ -1,0 +1,6 @@
+div.dropdown-menu.show {
+  background-color: rgb(33, 37, 41);
+}
+a.dropdown-item {
+  color: white;
+}
