@@ -3,12 +3,20 @@ import "../styles/TopNavbar.css";
 
 const TopNavbar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="dark"
+      variant="dark"
+      className="py-5"
+    >
       <Container>
-        <Navbar.Brand href="#home">Grant Duntugan</Navbar.Brand>
+        <Navbar.Brand href="#home" style={{ fontSize: 40 }}>
+          Grant Duntugan
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto" style={{ fontSize: 24 }}>
             <NavDropdown
               title="Projects"
               id="collasible-nav-dropdown"
@@ -26,7 +34,6 @@ const TopNavbar = () => {
                 Miscellaneous Projects
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#about-me">About Me</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

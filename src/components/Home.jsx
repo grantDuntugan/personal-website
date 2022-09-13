@@ -1,27 +1,35 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Figure } from "react-bootstrap";
 import bobaPicture from "../imgs/boba-picture.JPG";
 import "../styles/Home.css";
 
 const Home = () => {
   return (
-    <main>
+    <main style={{ fontFamily: "Montserrat" }}>
       <Container
         fluid
-        className="bg-dark"
-        style={{ padding: 5, paddingBottom: 30 }}
+        className="bg-secondary"
+        style={{ padding: 5, paddingBottom: 30, paddingTop: 40 }}
       >
         <Row>
-          <Col className="info-text">
+          <Col className="info-text d-flex align-items-center">
             Hi, my name is Grant! I am a student at UCSD studying Math-CS hoping
             to be working in software engineering one day. On this website,
             you'll find some of the projects I've worked on either at school,
             internships, or even on my own for fun. Hopefully you'll enjoy this
             showcase I've set up!
           </Col>
-          <Col>
-            <img id="boba-picture" src={bobaPicture} />
+          <Col className="d-flex align-items-center justify-content-center">
+            <Figure>
+              <Figure.Image src={bobaPicture} />
+              <Figure.Caption style={{ color: "black" }}>
+                Coding with boba!
+              </Figure.Caption>
+            </Figure>
           </Col>
         </Row>
+      </Container>
+      <Container fluid className="bg-primary">
+        <span style={{ fontSize: 50 }}>Hobbies</span>
       </Container>
     </main>
   );
