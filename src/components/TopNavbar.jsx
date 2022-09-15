@@ -11,7 +11,7 @@ const TopNavbar = () => {
       className="py-5"
     >
       <Container>
-        <Navbar.Brand href="#home" style={{ fontSize: 40 }}>
+        <Navbar.Brand href="#home" style={{ fontSize: 40, marginRight: 50 }}>
           Grant Duntugan
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
