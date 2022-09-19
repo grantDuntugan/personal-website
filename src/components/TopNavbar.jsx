@@ -8,7 +8,7 @@ const TopNavbar = (props) => {
     <Navbar
       collapseOnSelect
       expand="lg"
-      bg="dark"
+      bg="primary"
       variant="dark"
       className="py-5"
     >
