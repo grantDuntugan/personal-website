@@ -1,9 +1,8 @@
-import "./styles/App.css";
 import { useState } from "react";
 import TopNavbar from "./components/TopNavbar";
 import Home from "./components/Home";
 import ImpastaRosta from "./components/ImpastaRosta";
-
+import FingerBreaker from "./components/FingerBreaker";
 const App = () => {
   const [page, setPage] = useState("Home");
 
@@ -13,6 +12,8 @@ const App = () => {
         return <Home />;
       case "ImpastaRosta":
         return <ImpastaRosta />;
+      case "FingerBreaker":
+        return <FingerBreaker />;
       default:
         return (
           <main>

@@ -7,7 +7,7 @@ const Home = () => {
     <main style={{ fontFamily: "Montserrat" }}>
       <Container
         fluid
-        className="bg-secondary"
+        className="bg-dark"
         style={{ padding: 5, paddingBottom: 30, paddingTop: 40 }}
       >
         <Row>

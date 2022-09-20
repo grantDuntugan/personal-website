@@ -1,4 +1,4 @@
-import { Container, Row, Col, Figure } from "react-bootstrap";
+import { Container, Figure } from "react-bootstrap";
 import impastaHomePage from "../imgs/impasta-home.PNG";
 import impastaRecipePage from "../imgs/impasta-recipe.PNG";
 import impastaRecipeCard from "../imgs/impasta-recipe-card.PNG";
