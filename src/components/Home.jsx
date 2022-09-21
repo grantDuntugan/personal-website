@@ -1,6 +1,6 @@
 import { Container, Row, Col, Figure } from "react-bootstrap";
 import bobaPicture from "../imgs/boba-picture.JPG";
-import "../styles/Home.css";
+import "../styles/styles.css";
 
 const Home = () => {
   return (
@@ -27,9 +27,6 @@ const Home = () => {
             </Figure>
           </Col>
         </Row>
-      </Container>
-      <Container fluid className="bg-primary">
-        <span style={{ fontSize: 50 }}>Hobbies</span>
       </Container>
     </main>
   );

@@ -1,4 +1,5 @@
 import { Container, Figure } from "react-bootstrap";
+import "../styles/styles.css";
 import impastaHomePage from "../imgs/impasta-home.PNG";
 import impastaRecipePage from "../imgs/impasta-recipe.PNG";
 import impastaRecipeCard from "../imgs/impasta-recipe-card.PNG";
@@ -8,16 +9,12 @@ import impastaEditPage from "../imgs/impasta-edit-recipe.PNG";
 const ImpastaRosta = () => {
   return (
     <main style={{ fontFamily: "Montserrat" }}>
-      <Container
-        fluid
-        className="bg-secondary"
-        style={{ fontSize: "x-large", color: "white", padding: "3vw" }}
-      >
+      <Container fluid className="bg-secondary info-text">
         Impasta Rosta is a recipe website I built along with nine other students
         for a project-oriented class at UCSD. (The class was CSE 110 if you were
         interested!)
       </Container>
-      <Container fluid className="bg-dark" style={{ padding: "3vw" }}>
+      <Container fluid className="bg-dark figure-container">
         <Figure>
           <Figure.Caption style={{ color: "white" }}>
             Impasta Rosta Home Page
@@ -31,11 +28,7 @@ const ImpastaRosta = () => {
           <Figure.Image src={impastaRecipePage} />
         </Figure>
       </Container>
-      <Container
-        fluid
-        className="bg-secondary"
-        style={{ fontSize: "x-large", color: "white", padding: "3vw" }}
-      >
+      <Container fluid className="bg-secondary info-text">
         This app is made for college students who have no experience cooking.
         Using the Spoonacular API, users are provided with a plethora of recipes
         to choose from, including a thumbnail of the recipe picture. If the user
@@ -43,7 +36,7 @@ const ImpastaRosta = () => {
         brought to the list of ingredients along with the instructions to make
         the food.
       </Container>
-      <Container fluid className="bg-dark" style={{ padding: "3vw" }}>
+      <Container fluid className="bg-dark figure-container">
         <Figure>
           <Figure.Caption style={{ color: "white" }}>
             Impasta Rosta Recipe Page
@@ -52,16 +45,12 @@ const ImpastaRosta = () => {
           <Figure.Image src={impastaRecipeInstructions} />
         </Figure>
       </Container>
-      <Container
-        fluid
-        className="bg-secondary"
-        style={{ fontSize: "x-large", color: "white", padding: "3vw" }}
-      >
+      <Container fluid className="bg-secondary info-text">
         Once you find a recipe you like, you can add it to a cookbook to get
         back to it later. And once you become an expert, you might even want to
         edit the recipe yourself!
       </Container>
-      <Container fluid className="bg-dark" style={{ padding: "3vw" }}>
+      <Container fluid className="bg-dark figure-container">
         <Figure>
           <Figure.Caption style={{ color: "white" }}>
             Edit your saved recipes!
@@ -69,11 +58,7 @@ const ImpastaRosta = () => {
           <Figure.Image src={impastaEditPage} />
         </Figure>
       </Container>
-      <Container
-        fluid
-        className="bg-secondary"
-        style={{ fontSize: "x-large", color: "white", padding: "3vw" }}
-      >
+      <Container fluid className="bg-secondary info-text">
         If you would like to take a look, you can find the website here:
         <br />
         <a href="https://impasta-rosta.netlify.app">

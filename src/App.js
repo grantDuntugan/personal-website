@@ -2,7 +2,9 @@ import { useState } from "react";
 import TopNavbar from "./components/TopNavbar";
 import Home from "./components/Home";
 import ImpastaRosta from "./components/ImpastaRosta";
+import Espresso from "./components/Espresso";
 import FingerBreaker from "./components/FingerBreaker";
+
 const App = () => {
   const [page, setPage] = useState("Home");
 
@@ -12,6 +14,8 @@ const App = () => {
         return <Home />;
       case "ImpastaRosta":
         return <ImpastaRosta />;
+      case "Espresso":
+        return <Espresso />;
       case "FingerBreaker":
         return <FingerBreaker />;
       default:
