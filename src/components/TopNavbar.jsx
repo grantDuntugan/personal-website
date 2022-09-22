@@ -10,50 +10,36 @@ const TopNavbar = (props) => {
       expand="lg"
       bg="primary"
       variant="dark"
-      className="py-5"
+      className="py-5 d-flex justify-content-center"
     >
       <Container>
-        <Navbar.Brand
-          onClick={() => setPage("Home")}
-          href="#home"
-          style={{ fontSize: 40, marginRight: 50 }}
-        >
-          Grant Duntugan
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" style={{ fontSize: 24 }}>
-            <NavDropdown
-              title="Projects"
-              id="collasible-nav-dropdown"
-              href="#projects"
-              bg="dark"
+            <Nav.Link href="#about-me" onClick={() => setPage("AboutMe")}>
+              About Me
+            </Nav.Link>
+            <Nav.Link
+              href="#impasta-rosta"
+              onClick={() => setPage("ImpastaRosta")}
             >
-              <NavDropdown.Item
-                href="#impasta-rosta"
-                onClick={() => setPage("ImpastaRosta")}
-              >
-                Impasta Rosta
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="#espresso"
-                onClick={() => setPage("Espresso")}
-              >
-                Espresso
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="#finger-breaker"
-                onClick={() => setPage("FingerBreaker")}
-              >
-                Finger Breaker
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="#miscellaneous"
-                onClick={() => setPage("Miscellaneous")}
-              >
-                Miscellaneous Projects
-              </NavDropdown.Item>
-            </NavDropdown>
+              Impasta Rosta
+            </Nav.Link>
+            <Nav.Link href="#espresso" onClick={() => setPage("Espresso")}>
+              Espresso
+            </Nav.Link>
+            <Nav.Link
+              href="#finger-breaker"
+              onClick={() => setPage("FingerBreaker")}
+            >
+              Finger Breaker
+            </Nav.Link>
+            <Nav.Link
+              href="#miscellaneous-projects"
+              onClick={() => setPage("Miscellaneous")}
+            >
+              Miscellaneous Projects
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

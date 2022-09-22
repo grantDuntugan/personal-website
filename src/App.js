@@ -10,7 +10,7 @@ const App = () => {
 
   const getPage = () => {
     switch (page) {
-      case "Home":
+      case "AboutMe":
         return <Home />;
       case "ImpastaRosta":
         return <ImpastaRosta />;
