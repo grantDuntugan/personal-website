@@ -53,7 +53,7 @@ const AboutMe = () => {
         <br />
         <br />
         <ul className="cs-classes">
-          <li>
+          <li className={open.introCourses ? "down-arrow" : ""}>
             <Button
               onClick={() =>
                 setOpen({ ...open, ...{ introCourses: !open.introCourses } })
@@ -64,18 +64,17 @@ const AboutMe = () => {
               CSE 8A, CSE 8B, CSE 12: Introductory Courses and Basic Data
               Structures
             </Button>
-            <Collapse in={open.introCourses}>
-              <div style={{ color: "white" }}>
-                These classes are introductory courses that started off my
-                coding career. In Python and Java, we went through the basics of
-                coding along with the simple data structures such as arrays,
-                arraylists, 2D arrays, linked lists, hashmaps, and more. We also
-                went over OOP topics such as inheritance, abstraction,
-                polymorphism, ADTs, etc.
-              </div>
-            </Collapse>
           </li>
-          <li>
+          <Collapse in={open.introCourses} className="class-description">
+            <div style={{ color: "white" }}>
+              These classes are introductory courses that started off my coding
+              career. In Python and Java, we went through the basics of coding
+              along with the simple data structures such as arrays, arraylists,
+              2D arrays, linked lists, hashmaps, and more. We also went over OOP
+              topics such as inheritance, abstraction, polymorphism, ADTs, etc.
+            </div>
+          </Collapse>
+          <li className={open.tools ? "down-arrow" : ""}>
             <Button
               onClick={() => setOpen({ ...open, ...{ tools: !open.tools } })}
               variant="dark"
@@ -83,14 +82,14 @@ const AboutMe = () => {
             >
               CSE 15L: Software Tools and Techniques Laboratory
             </Button>
-            <Collapse in={open.tools}>
-              <div style={{ color: "white" }}>
-                This class worked with SE tools such as debuggers, the CLI, and
-                Git.
-              </div>
-            </Collapse>
           </li>
-          <li>
+          <Collapse in={open.tools} className="class-description">
+            <div style={{ color: "white" }}>
+              This class worked with SE tools such as debuggers, the CLI, and
+              Git.
+            </div>
+          </Collapse>
+          <li className={open.systems ? "down-arrow" : ""}>
             <Button
               onClick={() =>
                 setOpen({ ...open, ...{ systems: !open.systems } })
@@ -100,14 +99,14 @@ const AboutMe = () => {
             >
               CSE 30: Computer Organization and Systems Programming
             </Button>
-            <Collapse in={open.systems}>
-              <div style={{ color: "white" }}>
-                Here we learned to program in C and ARM in a UNIX environment.
-                There was a large emphasis on pointers and memory management.
-              </div>
-            </Collapse>
           </li>
-          <li>
+          <Collapse in={open.systems} className="class-description">
+            <div style={{ color: "white" }}>
+              Here we learned to program in C and ARM in a UNIX environment.
+              There was a large emphasis on pointers and memory management.
+            </div>
+          </Collapse>
+          <li className={open.advancedDS ? "down-arrow" : ""}>
             <Button
               onClick={() =>
                 setOpen({ ...open, ...{ advancedDS: !open.advancedDS } })
@@ -117,20 +116,20 @@ const AboutMe = () => {
             >
               CSE 100: Advanced Data Structures
             </Button>
-            <Collapse in={open.advancedDS}>
-              <div style={{ color: "white" }}>
-                In C++, we learned advanced data structures with a large
-                emphasis on runtimes and optimizations. We implemented different
-                types of trees, tries, and graphs. A few of these projects show
-                up under the "Miscellaneous Projects" tab where I created a
-                graph analyzer that takes in a csv file of nodes and edges and
-                can run multiple analyses such as generate an MST and find a
-                shortest path from one node to another. I also created a Huffman
-                Coding Tree for compressing and decompressing files here.
-              </div>
-            </Collapse>
           </li>
-          <li>
+          <Collapse in={open.advancedDS} className="class-description">
+            <div style={{ color: "white" }}>
+              In C++, we learned advanced data structures with a large emphasis
+              on runtimes and optimizations. We implemented different types of
+              trees, tries, and graphs. A few of these projects show up under
+              the "Miscellaneous Projects" tab where I created a graph analyzer
+              that takes in a csv file of nodes and edges and can run multiple
+              analyses such as generate an MST and find a shortest path from one
+              node to another. I also created a Huffman Coding Tree for
+              compressing and decompressing files here.
+            </div>
+          </Collapse>
+          <li className={open.compTheory ? "down-arrow" : ""}>
             <Button
               onClick={() =>
                 setOpen({ ...open, ...{ compTheory: !open.compTheory } })
@@ -140,16 +139,16 @@ const AboutMe = () => {
             >
               CSE 105: Theory of Computability
             </Button>
-            <Collapse in={open.compTheory}>
-              <div style={{ color: "white" }}>
-                This is a computational theory class where we learned about
-                finite and push-down automata, context-free languages, the
-                Turing machine, and regular expressions. We also discusesed
-                ideas of undecidability and the halting problem.
-              </div>
-            </Collapse>
           </li>
-          <li>
+          <Collapse in={open.compTheory} className="class-description">
+            <div style={{ color: "white" }}>
+              This is a computational theory class where we learned about finite
+              and push-down automata, context-free languages, the Turing
+              machine, and regular expressions. We also discusesed ideas of
+              undecidability and the halting problem.
+            </div>
+          </Collapse>
+          <li className={open.algo ? "down-arrow" : ""}>
             <Button
               onClick={() => setOpen({ ...open, ...{ algo: !open.algo } })}
               variant="dark"
@@ -157,18 +156,17 @@ const AboutMe = () => {
             >
               CSE 101: Design and Analysis of Algorithms
             </Button>
-            <Collapse in={open.algo}>
-              <div style={{ color: "white" }}>
-                Imagine Leetcode problems stuffed into one class. We learned
-                about creating efficient algorithms for sorting, searching,
-                pattern matching, graphs, and networks. Rather than coding the
-                solutions, we would use pseudocode and rigorously prove our
-                solutions could solve the problem and the runtime of the
-                solution.
-              </div>
-            </Collapse>
           </li>
-          <li>
+          <Collapse in={open.algo} className="class-description">
+            <div style={{ color: "white" }}>
+              Imagine Leetcode problems stuffed into one class. We learned about
+              creating efficient algorithms for sorting, searching, pattern
+              matching, graphs, and networks. Rather than coding the solutions,
+              we would use pseudocode and rigorously prove our solutions could
+              solve the problem and the runtime of the solution.
+            </div>
+          </Collapse>
+          <li className={open.softwareEng ? "down-arrow" : ""}>
             <Button
               onClick={() =>
                 setOpen({ ...open, ...{ softwareEng: !open.softwareEng } })
@@ -178,18 +176,18 @@ const AboutMe = () => {
             >
               CSE 110: Software Engineering
             </Button>
-            <Collapse in={open.softwareEng}>
-              <div style={{ color: "white" }}>
-                One of my favorite classes, this was a project-based course
-                where I teamed up with a group of 9 to build a recipe website.
-                We simulated scrums and sprints, used Slack to communicate, and
-                used GitHub to manage our project through an issue board and a
-                CI/CD pipeline. You can find this project under the tab "Impasta
-                Rosta", where we built the entire website using HTML/CSS/JS.
-              </div>
-            </Collapse>
           </li>
-          <li>
+          <Collapse in={open.softwareEng} className="class-description">
+            <div style={{ color: "white" }}>
+              One of my favorite classes, this was a project-based course where
+              I teamed up with a group of 9 to build a recipe website. We
+              simulated scrums and sprints, used Slack to communicate, and used
+              GitHub to manage our project through an issue board and a CI/CD
+              pipeline. You can find this project under the tab "Impasta Rosta",
+              where we built the entire website using HTML/CSS/JS.
+            </div>
+          </Collapse>
+          <li className={open.operatingSys ? "down-arrow" : ""}>
             <Button
               onClick={() =>
                 setOpen({ ...open, ...{ operatingSys: !open.operatingSys } })
@@ -199,16 +197,16 @@ const AboutMe = () => {
             >
               CSE 120: Principles of Computer Operating Systems
             </Button>
-            <Collapse in={open.operatingSys}>
-              <div style={{ color: "white" }}>
-                The basics of how the OS works. The idea of the kernel,
-                concurrency, memory management, virtual memory, file systems,
-                scheduling, and security. In this class, I had to implement
-                parts of an OS using nachOS in Java. These parts included
-                semaphores, locks, the file system, and the virtual memory.
-              </div>
-            </Collapse>
           </li>
+          <Collapse in={open.operatingSys} className="class-description">
+            <div style={{ color: "white" }}>
+              The basics of how the OS works. The idea of the kernel,
+              concurrency, memory management, virtual memory, file systems,
+              scheduling, and security. In this class, I had to implement parts
+              of an OS using nachOS in Java. These parts included semaphores,
+              locks, the file system, and the virtual memory.
+            </div>
+          </Collapse>
         </ul>
       </Container>
       <Container className="d-flex justify-content-center text-large fs-1">
