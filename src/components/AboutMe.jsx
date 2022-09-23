@@ -17,7 +17,7 @@ const AboutMe = () => {
 
   return (
     <main style={{ fontFamily: "Montserrat" }}>
-      <Container className="d-flex justify-content-center text-large fs-1">
+      <Container className="d-flex justify-content-center text-center text-large fs-1">
         About Me
       </Container>
       <Container
@@ -45,7 +45,7 @@ const AboutMe = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="d-flex justify-content-center text-large fs-1">
+      <Container className="d-flex text-center justify-content-center text-large fs-1">
         Computer Science Classes
       </Container>
       <Container fluid className="info-text bg-dark" style={{ padding: "3vw" }}>
@@ -209,7 +209,7 @@ const AboutMe = () => {
           </Collapse>
         </ul>
       </Container>
-      <Container className="d-flex justify-content-center text-large fs-1">
+      <Container className="d-flex text-center justify-content-center text-large fs-1">
         Math Classes
       </Container>
       <Container fluid className="info-text bg-dark" style={{ padding: "3vw" }}>
@@ -275,7 +275,7 @@ const AboutMe = () => {
           </li>
         </ul>
       </Container>
-      <Container className="d-flex justify-content-center text-large fs-1">
+      <Container className="d-flex text-center justify-content-center text-large fs-1">
         Future Studies
       </Container>
       <Container fluid className="info-text bg-dark" style={{ padding: "3vw" }}>
