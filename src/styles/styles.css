@@ -22,3 +22,41 @@
   width: 100%;
   position: absolute;
 }
+
+li:not(:last-child) {
+  margin-bottom: 4vh;
+}
+
+.math-class-title {
+  font-size: 1rem;
+}
+
+#arrow {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg);
+  margin-top: 40px;
+}
+
+ul.cs-classes > li {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+ul.cs-classes {
+  list-style: none;
+}
+
+ul.cs-classes > li:before {
+  content: "";
+  position: absolute;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 10px;
+  height: 10px;
+  top: calc(50% - 4px);
+  left: -20px;
+  transform: translateY(-50%) rotate(-45deg);
+}

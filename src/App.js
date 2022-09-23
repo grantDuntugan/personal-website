@@ -1,23 +1,29 @@
 import { useState } from "react";
 import TopNavbar from "./components/TopNavbar";
-import Home from "./components/Home";
+import AboutMe from "./components/AboutMe";
 import ImpastaRosta from "./components/ImpastaRosta";
 import Espresso from "./components/Espresso";
 import FingerBreaker from "./components/FingerBreaker";
+import UCLAJCCC from "./components/UCLAJCCC";
+import Miscellaneous from "./components/Miscellaneous";
 
 const App = () => {
-  const [page, setPage] = useState("Home");
+  const [page, setPage] = useState("AboutMe");
 
   const getPage = () => {
     switch (page) {
       case "AboutMe":
-        return <Home />;
+        return <AboutMe />;
       case "ImpastaRosta":
         return <ImpastaRosta />;
       case "Espresso":
         return <Espresso />;
       case "FingerBreaker":
         return <FingerBreaker />;
+      case "UCLA JCCC":
+        return <UCLAJCCC />;
+      case "Miscellaneous":
+        return <Miscellaneous />;
       default:
         return (
           <main>
