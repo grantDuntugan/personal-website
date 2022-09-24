@@ -5,8 +5,6 @@ import ImpastaRosta from "./components/ImpastaRosta";
 import Espresso from "./components/Espresso";
 import FingerBreaker from "./components/FingerBreaker";
 import UCLAJCCC from "./components/UCLAJCCC";
-import Miscellaneous from "./components/Miscellaneous";
-
 const App = () => {
   const [page, setPage] = useState("AboutMe");
 
@@ -22,8 +20,6 @@ const App = () => {
         return <FingerBreaker />;
       case "UCLA JCCC":
         return <UCLAJCCC />;
-      case "Miscellaneous":
-        return <Miscellaneous />;
       default:
         return (
           <main>

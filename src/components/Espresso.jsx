@@ -13,7 +13,7 @@ import createBoard from "../imgs/espresso-create-board.PNG";
 
 const Espresso = () => {
   return (
-    <main>
+    <main style={{ fontFamily: "Montserrat" }}>
       <Container fluid className="bg-dark info-text">
         Espresso is a competitive productivity app that I created with a team of
         six at a Software Engineering internship at SDSC. The main goal of the

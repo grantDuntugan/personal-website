@@ -37,12 +37,6 @@ const TopNavbar = (props) => {
             <Nav.Link href="#ucla-jccc" onClick={() => setPage("UCLA JCCC")}>
               UCLA JCCC
             </Nav.Link>
-            <Nav.Link
-              href="#miscellaneous-projects"
-              onClick={() => setPage("Miscellaneous")}
-            >
-              Miscellaneous Projects
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

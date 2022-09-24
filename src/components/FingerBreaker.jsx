@@ -7,7 +7,7 @@ import scorePicture from "../imgs/fb-score.PNG";
 
 const FingerBreaker = () => {
   return (
-    <main>
+    <main style={{ fontFamily: "Montserrat" }}>
       <Container fluid bg="dark" className="bg-dark info-text">
         Finger Breaker is a typing game I made for fun using Pygame. The goal of
         the game is to defeat monsters by typing out words that appear on the

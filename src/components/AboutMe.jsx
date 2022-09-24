@@ -121,12 +121,11 @@ const AboutMe = () => {
             <div style={{ color: "white" }}>
               In C++, we learned advanced data structures with a large emphasis
               on runtimes and optimizations. We implemented different types of
-              trees, tries, and graphs. A few of these projects show up under
-              the "Miscellaneous Projects" tab where I created a graph analyzer
-              that takes in a csv file of nodes and edges and can run multiple
-              analyses such as generate an MST and find a shortest path from one
-              node to another. I also created a Huffman Coding Tree for
-              compressing and decompressing files here.
+              trees, tries, and graphs. For our final projects, I created a
+              graph analyzer that takes in a csv file of nodes and edges and can
+              run multiple analyses such as generate an MST and find a shortest
+              path from one node to another. I also created a Huffman Coding
+              Tree for compressing and decompressing files here.
             </div>
           </Collapse>
           <li className={open.compTheory ? "down-arrow" : ""}>
