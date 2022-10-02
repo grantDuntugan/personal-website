@@ -76,3 +76,8 @@ ul.cs-classes > li.down-arrow:before {
   left: -20px;
   transform: translateY(-50%) rotate(45deg);
 }
+
+.link-button {
+  outline: none !important;
+  outline-offset: none !important;
+}
