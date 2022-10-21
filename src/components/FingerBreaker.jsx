@@ -1,4 +1,4 @@
-import { Container, Figure, Button } from "react-bootstrap";
+import { Container, Figure } from "react-bootstrap";
 import "../styles/styles.css";
 import titleScreen from "../imgs/fb-title.PNG";
 import enemyPicture from "../imgs/fb-enemy.PNG";
